@@ -3,7 +3,7 @@ package id.ac.unpas.sipetok.view;
 import id.ac.unpas.sipetok.controller.TransaksiController;
 import id.ac.unpas.sipetok.model.DetailTransaksi;
 import id.ac.unpas.sipetok.model.Transaksi;
-
+import id.ac.unpas.sipetok.view.MenuUtama;
 import javax.swing.*;
 import java.awt.*;
 import java.sql.Date;
@@ -59,7 +59,7 @@ public class FormTransaksi extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-        setLayout(new GridLayout(6, 2, 10, 10));
+        setLayout(new GridLayout(7, 2, 10, 10));
 
         cmbPelanggan = new JComboBox<>();
         cmbBarang = new JComboBox<>();
@@ -70,6 +70,13 @@ public class FormTransaksi extends JFrame {
 
         btnHitung = new JButton("Hitung Total");
         btnSimpan = new JButton("Simpan Transaksi");
+        
+        JButton btnKembali = new JButton("Kembali");
+
+        btnKembali.addActionListener(e -> {
+            dispose();                       // tutup form barang
+            new MenuUtama().setVisible(true); // kembali ke menu utama
+        });
 
         add(new JLabel("Pelanggan"));
         add(cmbPelanggan);
@@ -83,6 +90,7 @@ public class FormTransaksi extends JFrame {
         add(txtTotal);
         add(btnHitung);
         add(btnSimpan);
+        add(btnKembali);
 
         // ===== EVENT =====
         cmbBarang.addActionListener(e -> loadHarga());

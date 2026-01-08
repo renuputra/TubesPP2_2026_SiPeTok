@@ -26,18 +26,22 @@ public class MenuUtama extends JFrame {
 
         btnBarang.addActionListener(e -> {
             new FormBarang().setVisible(true);
+            dispose();
         });
 
         btnPelanggan.addActionListener(e -> {
             new FormPelanggan().setVisible(true);
+            dispose();
         });
         
         btnTransaksi.addActionListener(e -> {
             new FormTransaksi().setVisible(true);
+            dispose();
         });
         
         btnRiwayat.addActionListener(e -> {
             new FormRiwayatTransaksi().setVisible(true);
+            dispose();
         });
 
         btnKeluar.addActionListener(e -> {

@@ -1,6 +1,7 @@
 package id.ac.unpas.sipetok.view;
 
 import id.ac.unpas.sipetok.controller.TransaksiController;
+import id.ac.unpas.sipetok.view.MenuUtama;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -27,10 +28,18 @@ public class FormRiwayatTransaksi extends JFrame {
         // ===== BUTTON PANEL =====
         JButton btnUbah = new JButton("Ubah");
         JButton btnHapus = new JButton("Hapus");
+        
+        JButton btnKembali = new JButton("Kembali");
+
+        btnKembali.addActionListener(e -> {
+            dispose();                       // tutup form barang
+            new MenuUtama().setVisible(true); // kembali ke menu utama
+        });
 
         JPanel panelButton = new JPanel();
         panelButton.add(btnUbah);
         panelButton.add(btnHapus);
+        panelButton.add(btnKembali);
 
         add(sp, BorderLayout.CENTER);
         add(panelButton, BorderLayout.SOUTH);
