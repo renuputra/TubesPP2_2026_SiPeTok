@@ -1,0 +1,14 @@
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\controller\BarangController.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\controller\PelangganController.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\controller\TransaksiController.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\database\KoneksiDB.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\model\Barang.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\model\DetailTransaksi.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\model\Pelanggan.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\model\Transaksi.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\SiPeTok.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\view\FormBarang.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\view\FormPelanggan.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\view\FormRiwayatTransaksi.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\view\FormTransaksi.java
+D:\TugasBesar\SiPeTok\src\main\java\id\ac\unpas\sipetok\view\MenuUtama.java
